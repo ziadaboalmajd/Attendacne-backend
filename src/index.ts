@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-// Cors for cross origin allowance
+// Cors for cros origin allowance
 
 app.use(cors());
 
