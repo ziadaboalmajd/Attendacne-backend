@@ -23,7 +23,7 @@ let time: string;
 
 const gtData = (res : any) => {
   // lecture data
-  request("http://localhost:3000/front/newLec", function (error, request, body) {
+  request("https://rose-awful-scallop.cyclic.app/front/newLec", function (error, request, body) {
     if (body) {
       body.length > 10 && body !== undefined && body !== "No Data" ? frontData = JSON.parse(body) : frontData = "No Data";
       DrName = frontData.DrName;
@@ -38,7 +38,7 @@ const gtData = (res : any) => {
     }
   });
   // attendance data
-  request("http://localhost:3000/front/newAtten", function (error, request, body) {
+  request("https://rose-awful-scallop.cyclic.app/front/newAtten", function (error, request, body) {
     if (body) {
       body.length > 10 && body !== undefined && body !== "" ? arduinoD = JSON.parse(body) : arduinoD = "No Data";
     }
@@ -54,7 +54,7 @@ const gtData = (res : any) => {
         console.log(arduinoD);
         SheetCreating.createSheet(res, arduinoD, today, actTerm, actLevel, cousreCode, courseName);
       }
-    }, 1000);
+    }, 3000);
   }
 };
 
