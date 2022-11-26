@@ -16,6 +16,8 @@ import { json } from "body-parser";
 
 const app = express();
 
+app.use("/", express.static(__dirname + "/website"));
+
 const port = process.env.PORT || 8080;
 
 // setup 

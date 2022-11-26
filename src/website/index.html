@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resize</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- add image gif splash -->
+  <div id="imgSdiv">
+    <img id="imgSplash" src="gif.gif" alt="Resize App" id="imgSplash">
+  </div>
+  <div id="app">
+    <div class="holder headline">
+      resize Image
+    </div>
+    <div class="infoEntry">
+      <div class="holder width">
+        <label for="wide">enter width</label>
+        <input type="text" id="wide" placeholder=" pixels" maxlength="4" autocomplete="off"
+          onkeypress="return isNumber(event)">
+      </div>
+      <div class="holder height">
+        <label for="high">enter height</label>
+        <input type="text" id="high" placeholder=" pixels" maxlength="4" autocomplete="off"
+          onkeypress="return isNumber(event)">
+      </div>
+    </div>
+    <div id="displayimage"
+      style="width: 35vw; height: 20vh; background-position: center; background-size: cover; display: none;"></div>
+    <input id="upload" type="file" accept="image/*" style="display:none;"></input>
+    <label for="upload">upload</label>
+    <div class="holder feel">
+      <button id="generate" type="submit"> Generate </button>
+    </div>
+    </div>
+  </div>
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
