@@ -38,11 +38,11 @@ app.use("/api", logger, routeOne);
 
 app.use("/front", logger, routeTwo);
 
-app.use("/", logger, getd);
+app.all('/', (req, res) => {
+  console.log("Just got a request!");
+  res.send('Yo!');
+});
 
-function getd(req: express.Request, res: express.Response) {
-  res.send("deployed");
-}
 // listen port
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`);
