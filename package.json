@@ -1,13 +1,17 @@
 {
-  "name": "build",
+  "name": "attendance-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": "14.15.0"
+  },
+  "main": "server.ts",
   "scripts": {
-    "build": "npx tsc",
-    "jasmine": "jasmine",
-    "test": "npm run build && npm run jasmine",
-    "start": "ts-node src/index.ts",
+    "tsc": "npx tsc",
+    "clean": "rm -rf  ./build/server.js|| true",
+    "build": "npm run clean && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/server.js",
     "lint": "eslint . --ext .ts ",
     "prettier": "prettier --write"
   },

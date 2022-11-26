@@ -12,7 +12,6 @@ import cors from 'cors';
 
 import { json } from "body-parser";
 
-import * as dotenv from "dotenv";
 
 // import dotenv from 'dotenv';
 
