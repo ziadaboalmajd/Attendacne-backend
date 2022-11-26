@@ -40,7 +40,7 @@ app.use("/front", logger, routeTwo);
 
 app.all('/', (req, res) => {
   console.log("Just got a request!");
-  res.send('Yo!');
+  res.send('ziiiiiiad!');
 });
 
 // listen port
