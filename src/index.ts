@@ -16,8 +16,6 @@ import { json } from "body-parser";
 
 const app = express();
 
-app.use("/", express.static(__dirname + "/website"));
-
 const port = process.env.PORT || 8080;
 
 // setup 
@@ -40,6 +38,11 @@ app.use("/api", logger, routeOne);
 
 app.use("/front", logger, routeTwo);
 
+app.use("/", logger, getd);
+
+function getd(req: express.Request, res: express.Response) {
+  res.send("deployed");
+}
 // listen port
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`);
