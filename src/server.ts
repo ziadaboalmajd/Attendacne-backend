@@ -21,8 +21,7 @@ const port = process.env.PORT || 3000;
 // setup 
 
 app.all('/', (req, res) => {
-  res.redirect('/home');
-  res.send('');
+  res.redirect('https://rose-awful-scallop.cyclic.app//home');
 });
 app.use('/home', express.static(__dirname + '/../src/public'));
 
