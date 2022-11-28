@@ -12,7 +12,6 @@ import cors from 'cors';
 
 import { json } from "body-parser";
 
-
 // import dotenv from 'dotenv';
 
 const app = express();
@@ -20,6 +19,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // setup 
+app.use('/home', express.static(__dirname + '/../src/public'));
 
 //Here we are configuring express to use body-parser as middle-ware.
 
@@ -33,14 +33,13 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.use("/", express.static(__dirname + "./src/public"));
 
 app.use("/api", logger, routeOne);
 
 app.use("/front", logger, routeTwo);
 
 // listen port
-app.listen(port, () => {
+app.listen(port, () => {  
   console.log(`server started at localhost:${port}`);
 });
 
