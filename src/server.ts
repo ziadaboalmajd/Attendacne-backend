@@ -19,6 +19,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // setup 
+
+app.all('/', (req, res) => {
+  res.redirect('http://localhost:3000/home');
+  res.send('');
+});
 app.use('/home', express.static(__dirname + '/../src/public'));
 
 //Here we are configuring express to use body-parser as middle-ware.
