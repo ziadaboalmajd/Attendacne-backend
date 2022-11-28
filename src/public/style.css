@@ -316,6 +316,13 @@ button:focus {
         font-size: 22px;
     }
 
+    .levelTerm label {
+        font-size: 17px;
+    }
+    .levelTerm  {
+        width: 77%;
+    }
+
     textarea {
         width: 75vw;
         height: 10vh;
@@ -342,9 +349,6 @@ button:focus {
     flex-direction: row;
     justify-content: space-around;
     width: fit-content;
-    position: fixed;
-    right: 3vw;
-    bottom: 1vh;
 }
 
 .translate div {

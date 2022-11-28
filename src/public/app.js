@@ -164,6 +164,9 @@ function translateEn() {
   document.querySelector(".headline").innerText = "create attendance sheet";
   document.querySelector("#profLabel").innerText = "Enter professor Name";
   document.querySelector("#corseLabel").innerText = "Enter course name";
+  document.querySelector("#termLabel").innerText = "select term";
+  document.querySelector("#levelLabel").innerText = "select level";
+  document.querySelector(".title").innerText = "Most Recent Entry";
   courseIn.children[0].innerText = "select course";
   profIn.children[0].innerText = "select name";
   levelIn.children[0].innerText = "select level";
@@ -175,6 +178,9 @@ function translateAr() {
   document.querySelector(".headline").innerText = "ملف للغياب";
   document.querySelector("#profLabel").innerText = "أدخل اسم الدكتور";
   document.querySelector("#corseLabel").innerText = "أدخل اسم المادة";
+  document.querySelector("#termLabel").innerText = "اختر الفصل الدراسي";
+  document.querySelector("#levelLabel").innerText = "اختر المستوي";
+  document.querySelector(".title").innerText = "أحدث تسجيل دخول";
   profIn.children[0].innerText = "اختر الاسم";
   courseIn.children[0].innerText = "اختر المادة";
   levelIn.children[0].innerText = "اختر المستوي";
