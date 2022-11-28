@@ -39,11 +39,6 @@ app.use("/api", logger, routeOne);
 
 app.use("/front", logger, routeTwo);
 
-app.all('/', (req, res) => {
-  console.log("Just got a request!");
-  res.send('ziiiiiiad!');
-});
-
 // listen port
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`);
