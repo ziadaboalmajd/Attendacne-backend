@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000;
 // setup 
 
 app.all('/', (req, res) => {
-  res.redirect('http://localhost:3000/home');
+  res.redirect('/home');
   res.send('');
 });
 app.use('/home', express.static(__dirname + '/../src/public'));
