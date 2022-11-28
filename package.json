@@ -11,7 +11,7 @@
     "clean": "rm -rf  ./build/server.js|| true",
     "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node ./build/server.js",
+    "start": "node ./build/server.js",
     "lint": "eslint . --ext .ts ",
     "prettier": "prettier --write"
   },
