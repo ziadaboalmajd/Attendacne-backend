@@ -25,7 +25,7 @@ app.all('/', (req, res) => {
 });
 app.use('/home', express.static(__dirname + '/../src/public'));
 
-//Here we are configuring express to use body-parser as middle ware.
+//Here we are configuring express to use body-parser as middle-ware.
 
 app.use(bodyParser.urlencoded({
   extended: false
