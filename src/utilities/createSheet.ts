@@ -1,6 +1,6 @@
 import xlsx from "json-as-xlsx";
 
-function createSheet(respond : any, finalArduinoD : any,  today : string, actTerm : string, actLevel : string, cousreCode: string, courseName: string) {
+function createSheet(respond : any, finalArduinoD : any, DrName : any,  today : string, actTerm : string, actLevel : string, cousreCode: string, courseName: string) {
     const data = [
         {
             sheet: courseName + " " + actTerm + " " + actLevel,
@@ -10,7 +10,6 @@ function createSheet(respond : any, finalArduinoD : any,  today : string, actTer
                 { label: "المستوي", value: "level" },
                 { label: "التخصص", value: "department" },
                 { label: "الشعبة", value: "specialization" },
-                { label: "وقت الحضور", value: "time" },
             ],
             content: finalArduinoD,
         }

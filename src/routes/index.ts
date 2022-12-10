@@ -2,8 +2,8 @@ import express from 'express';
 
 import  excelSheet  from './api/dataExcel';
 
-const routesOne = express.Router();
+const route = express.Router();
 
-routesOne.use('/', excelSheet);
+route.use('/', excelSheet);
 
-export default routesOne;
+export default route;

@@ -2,9 +2,7 @@ import express from 'express';
 
 import logger from "./utilities/logger";
 
-import routeOne from "./routes/api/dataExcel";
-
-import routeTwo from "./routes/api/dataFront";
+import route from "./routes/api/dataExcel";
 
 import bodyParser from 'body-parser';
 
@@ -39,9 +37,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-app.use("/api", logger, routeOne);
-
-app.use("/front", logger, routeTwo);
+app.use("/api", logger, route);
 
 // listen port
 app.listen(port, () => {  
