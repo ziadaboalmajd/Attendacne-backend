@@ -19,10 +19,9 @@ const port = process.env.PORT || 3000;
 // setup 
 
 app.all('/', (req, res) => {
-  res.redirect('https://rose-awful-scallop.cyclic.app//home');
+  res.send("backend node js");
 });
 
-app.use('/home', express.static(__dirname + '/../src/public'));
 
 //Here we are configuring express to use body-parser as middle-ware.
 
