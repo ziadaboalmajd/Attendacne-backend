@@ -34,10 +34,3 @@ function createSheet(respond: any, finalArduinoD: any, DrName: any, today: strin
 };
 
 export default { createSheet };
-
-
-
-// xlsx(data, settings); // Will download the excel file
-//writeMode: 'writeFile', // The available parameters are 'WriteFile' and 'write'. This setting is optional. Useful in such cases https://docs.sheetjs.com/docs/solutions/output#example-remote-file
-//file: ""
-//fileName: (courseName + " " + today + ".xlxs"), 

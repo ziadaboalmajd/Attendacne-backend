@@ -1,16 +1,10 @@
 import express from 'express';
 
-import logger from "./utilities/logger";
-
 import route from "./routes/api/dataExcel";
 
 import bodyParser from 'body-parser';
 
 import cors from 'cors';
-
-import { json } from "body-parser";
-
-// import dotenv from 'dotenv';
 
 const app = express();
 
@@ -36,7 +30,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-app.use("/api", logger, route);
+app.use("/api", route);
 
 // listen port
 app.listen(port, () => {  
