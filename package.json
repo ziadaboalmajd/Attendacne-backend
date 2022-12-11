@@ -9,7 +9,9 @@
   "scripts": {
     "tsc": "npx tsc",
     "clean": "rm -rf  ./build/server.js|| true",
-    "build": "npm run clean && tsc",
+    "xlsxS": "rm -rf  ./node_modules/xlsx/xlsx.js|| true", 
+    "cXlsx": "cp src/xlsx.js ./node_modules/xlsx",
+    "build": "npm run clean && tsc && npm run xlsxS && npm run cXlsx",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./build/server.js",
     "lint": "eslint . --ext .ts ",
