@@ -252,12 +252,12 @@ function getJson() {
           });
         } else if (IdStudJson[key] === fake || IdStudJson[key] === fake + "\r" || Number(IdStudJson[key]) === Number(fake)) {
             studentObj.push({
-              number: increment++,
-              user: "x",
-              level: "x",
+              number: "x",
+              user: "-----",
+              level: "-----",
               department: "مخالفين",
-              specialization: "x",
-              id: "x"
+              specialization: "-----",
+              id: "-----"
             });
         }
       });
