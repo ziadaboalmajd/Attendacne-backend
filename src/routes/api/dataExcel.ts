@@ -59,6 +59,7 @@ const Name17 = "79244967";
 const Name18 = "311611587";
 const Name19 = "15271617";
 const Name20 = "47242907";
+const fake = "000000000";
 
 // get data from database
 function getJson() {
@@ -249,6 +250,15 @@ function getJson() {
             specialization: "باور",
             id: 201600912
           });
+        } else if (IdStudJson[key] === fake || IdStudJson[key] === fake + "\r" || Number(IdStudJson[key]) === Number(fake)) {
+            studentObj.push({
+              number: increment++,
+              user: "x",
+              level: "x",
+              department: "مخالفين",
+              specialization: "x",
+              id: "x"
+            });
         }
       });
       console.log(studentObj);

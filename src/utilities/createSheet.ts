@@ -10,6 +10,7 @@ function createSheet(respond: any, finalArduinoD: any, DrName: any, today: strin
                 { label: "المستوي", value: "level" },
                 { label: "التخصص", value: "department" },
                 { label: "الشعبة", value: "specialization" },
+                { label: "الكود", value: "id" },
             ],
             content: finalArduinoD,
         }
