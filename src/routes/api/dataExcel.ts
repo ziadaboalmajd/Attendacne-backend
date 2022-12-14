@@ -85,7 +85,7 @@ function getJson() {
             user: "ذياد جمال ابو المجد",
             level: "مستوى تالت",
             department: "كهرباء",
-            specialization: "مستوي ثاني",
+            specialization: "اتصالات",
             id: 201600225
           });
         } else if (IdStudJson[key] === Name3 || IdStudJson[key] === Name3 + "\r" || Number(IdStudJson[key]) === Number(Name3)) {
@@ -94,7 +94,7 @@ function getJson() {
             user: "عمر هاني السيد",
             level: "مستوى تالت",
             department: "كهرباء",
-            specialization: " اتصالات",
+            specialization: "باور",
             id: 201600111
           });
         } else if (IdStudJson[key] === Name4 || IdStudJson[key] === Name4 + "\r" || Number(IdStudJson[key]) === Number(Name4)) {
